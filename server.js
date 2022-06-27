@@ -7,8 +7,8 @@ const port=process.env.port || 9000;
 //middle wares
 app.use(express.json());
 app.use((req,res,next)=>{
-    res.setHeader('Acess-Control-Allow-Origin','*'),
-    res.setHeader('Acess-Control-Allow-Headers','*'),
+    res.setHeader('Access-Control-Allow-Origin','*'),
+    res.setHeader('Access-Control-Allow-Headers','*'),
     next()
 })
 //db config
